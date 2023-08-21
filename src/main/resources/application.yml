@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: kimSeulHa.stockDividend
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      use-new-id-generator-mappings: false
+    show-sql: true
+    defer-datasource-initialization: true
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/dividend;MODE=MySQL
+    username: sa
+
+  redis:
+    host: localhost
+    port: 6379
+
+  jwt:
+    secret: aGVsbG8KaGVsbG8KaGVsbG8KaGVsbG8KaGVsbG8KaGVsbG8KaGVsbG8KaGVsbG8K
+
